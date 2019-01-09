@@ -1,0 +1,24 @@
+# How to install / connect to postgres DB
+
+# Good tutorial : http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.html
+
+# Connect to the local psql - First connection
+sudo -u postgres psql postgres # This creates a username "postgres"
+
+# Set the password: 
+\password [PW]
+
+# Close psql
+\q
+
+# ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+# Try localhost connection [password demand will be prompted] 
+psql -U postgres -h localhost
+
+# Connection url exple:  
+# postgres://postgres:psqlpassword@localhost:5432/dbnamestring		
+
+# psql commands examples
+
+dropdb --if-exists dbnamestring
+createdb dbnamestring

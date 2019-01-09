@@ -1,0 +1,9 @@
+# Push to PyPI
+## http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/notebooks/td1a_unit_test_ci_correction.html
+
+# When pushing again to pypi:
+# 1/ Change the version number in the __init__.py to an upgraded name
+# 2/ WARNING !! Use the proper python !!!!! If you wnat to make it available for 3.6, then :
+python3.6 setup.py bdist_wheel upload
+
+# WARNING !!

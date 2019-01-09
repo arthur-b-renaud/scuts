@@ -1,0 +1,16 @@
+venv
+.idea
+.pytest_cache
+*.py[cod]
+*/cache/*
+cache/
+.ipynb_checkpoints/
+build/
+dist/
+scuts.egg-info/
+_build
+_static
+_templates
+.eggs/
+*/geckodriver.log
+geckodriver.log

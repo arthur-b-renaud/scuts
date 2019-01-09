@@ -1,0 +1,17 @@
+# To add a user : https://www.cyberciti.biz/faq/howto-add-new-linux-user-account/
+sudo useradd alexandre
+
+# The following line adds a password
+sudo passwd alexandre
+
+# Add to sudo group:
+sudo adduser alexandre sudo
+
+# Enable a ssh connection for an existing user
+sudo chown -R alexandre:alexandre /home/alexandre/.ssh
+sudo chmod 0700 /home/alexandre/.ssh
+sudo mkdir /home/alexandre
+sudo mkdir /home/alexandre/.ssh/
+nano /home/alexandre/.ssh/authorized_keys
+# Copy the public key here :  ##
+sudo chmod 0600 /home/alexandre/.ssh/authorized_keys

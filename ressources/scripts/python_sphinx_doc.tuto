@@ -1,0 +1,16 @@
+# Initialising the documentation
+## See: http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/notebooks/td1a_unit_test_ci_correction.html
+## See also: https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+
+# creating docs
+mkdir docs
+cd docs
+sphinx-quickstart # BE SURE TO SEPARATE BUILD FROM SOURCE (question 1) + MAKE SURE TO ANSWER y for "autodoc" question
+
+#Automatically generating documentation
+#With autodoc, you can tell Sphinx to look at your docstrings and generate the documentation for your project.
+#First, open the docs/source/conf.py file to change the configuration. You need to uncomment the following line and add the relative path to where your code is.
+# =>    sys.path.insert(0, os.path.abspath('../..'))
+
+# Gen .rsts
+sphinx-apidoc -f -o source/ ../mypackage/
