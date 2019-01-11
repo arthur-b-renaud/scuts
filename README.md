@@ -1,4 +1,7 @@
 
+[![Travis](https://travis-ci.org/sdpython/scuts.svg?branch=master)](https://travis-ci.org/sdpython/scuts)
+
+
 # SCUTS - Standard shortcuts
 
 This repo intends to holds good programming heuristics for Data Scientist wanting to code smoothly.
