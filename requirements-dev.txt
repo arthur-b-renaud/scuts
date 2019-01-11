@@ -1,0 +1,9 @@
+coverage
+lxml
+pandas
+pillow
+proxybroker
+pytest
+python-magic
+requests
+selenium
