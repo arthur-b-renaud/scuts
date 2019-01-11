@@ -6,4 +6,4 @@ proxybroker
 pytest
 python-magic
 requests
-# selenium
+selenium

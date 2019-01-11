@@ -8,9 +8,8 @@ matrix:
     env: PYTHONPATH=../scuts
   - python: 3.7.2
     name: "python3.7"
-    env: PYTHONPATH=scuts
+    env: PYTHONPATH=../scuts
 install: 
     - pip install -r requirements-dev.txt
 script:
-    - export
     - pytest tests
