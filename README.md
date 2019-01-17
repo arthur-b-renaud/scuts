@@ -1,5 +1,8 @@
 
-# SCUTS - Standard shortcuts
+[![Travis](https://travis-ci.org/sdpython/scuts.svg?branch=master)](https://travis-ci.org/sdpython/scuts)
+
+
+# SCUTS
 
 This repo intends to holds good programming heuristics for Data Scientist wanting to code smoothly.
 
@@ -7,7 +10,8 @@ Based on self-experience, it combines "heuristics" and "tricks" in order to make
 
 This repo also holds some scripts in the ressources/scripts section that should make people's life easier when it comes to installs on Ubuntu !
 
-## Remarks : 
+## Remarks
+
 This folder uses pipenv for dependencies handling. Go PIPENV ! 
 
 ## Image functions
