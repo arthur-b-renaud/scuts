@@ -9,7 +9,7 @@ from PIL import Image
 from lxml import etree
 parser = etree.HTMLParser()
 
-from img_functions import img_max_sideresize
+from .img_functions import img_max_sideresize
 
 # Variables
 xml_head_template = """
@@ -151,7 +151,6 @@ def handle_obj_detection_model_and_config_faster_rcnn_resnet101(train_folder, or
 
     with open(config_dest_path, 'w') as f:
         f.write(config_str)
-
 
 
 def gen_xml_file():
