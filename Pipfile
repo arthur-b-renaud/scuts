@@ -16,6 +16,7 @@ requests = "*"
 pytest = "*"
 coverage = "*"
 sphinx = "*"
+imageio = "*"
 
 [requires]
 python_version = "3.6"
