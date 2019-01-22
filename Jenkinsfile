@@ -24,7 +24,7 @@ pipeline {
                 echo $PYPIPENVEXEC
                 '''
 
-                sh 'sudo ./ressources/scripts/opencv.sh'
+                sh 'sudo $WORKSPACE/ressources/scripts/opencv.sh'
 
                 sh '''
                 export PYINT=python3.6
