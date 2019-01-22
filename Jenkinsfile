@@ -23,6 +23,15 @@ pipeline {
                 PYPIPENVEXEC="$($PYINT -m pipenv --venv)/bin/python$PYVERSION"
                 echo $PYPIPENVEXEC
                 '''
+
+                sh './ressources/scripts/opencv.sh'
+
+                sh '''
+                export PYINT=python3.6
+                export PYVERSION=3.6
+                PYPIPENVLOC="$($PYINT -m pipenv --venv)"
+                ln -s "/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so" "$PYPIPENVLOC/lib/python3.6/site-packages/cv2/cv2.so"
+                '''
             }
         }
         stage('Test') {
