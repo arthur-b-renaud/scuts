@@ -67,4 +67,4 @@ python3 -c "import cv2; print(cv2.__version__); img = cv2.imread('')"
 make clean
 
 # Then for having cv2 in a virtualenv
-ln -s "/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so" "/home/renaud/.local/share/virtualenvs/scuts-9KAUpLJp/lib/python3.6/site-packages/cv2/cv2.so"
+# ln -s "/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so" "/home/renaud/.local/share/virtualenvs/scuts-9KAUpLJp/lib/python3.6/site-packages/cv2/cv2.so"
